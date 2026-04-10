@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   BookOpen, Award, Users, Star, Shield, Cpu, Dumbbell,
-  ChevronRight, Quote, ArrowRight, CheckCircle, GraduationCap, Heart, Zap
+  ChevronRight, Quote, ArrowRight, CheckCircle, GraduationCap, Heart, Zap,
+  IndianRupee, AirVent, Monitor, Lightbulb, TreePine
 } from 'lucide-react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { FadeUp, StaggerParent, StaggerChild, ScaleIn } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Home.css';
 
 /* ── Data ────────────────────────────────────── */
@@ -18,12 +20,11 @@ const stats = [
 ];
 
 const whyUs = [
-  { icon: <GraduationCap size={28} />, title: 'Qualified Faculty', desc: 'Experienced and passionate teachers dedicated to holistic student development.' },
-  { icon: <BookOpen size={28} />, title: 'Rich Curriculum', desc: 'CBSE-aligned syllabus integrated with modern learning methodologies.' },
-  { icon: <Cpu size={28} />, title: 'Digital Learning', desc: 'Smart classrooms and e-learning tools for 21st-century education.' },
-  { icon: <Shield size={28} />, title: 'Safe Environment', desc: 'CCTV-monitored, secure campus ensuring child safety at all times.' },
-  { icon: <Heart size={28} />, title: 'Value Education', desc: 'Strong focus on character building, ethics, and moral values.' },
-  { icon: <Zap size={28} />, title: 'Co-Curricular', desc: 'Sports, arts, and cultural activities to develop well-rounded students.' },
+  { icon: <IndianRupee size={28} />, title: 'Affordable Fee Structure', desc: 'Quality education made accessible with a budget-friendly and transparent fee structure for every family.' },
+  { icon: <AirVent size={28} />, title: 'AC Classrooms', desc: 'Air-conditioned classrooms that provide a comfortable and focused learning environment throughout the year.' },
+  { icon: <Monitor size={28} />, title: 'Digital Panel Board', desc: 'Well-equipped classrooms featuring modern Digital Panel Boards for an interactive and engaging teaching experience.' },
+  { icon: <Lightbulb size={28} />, title: 'Expertise Educators', desc: 'Highly skilled educators with proven teaching skills, dedicated to nurturing every student\'s potential.' },
+  { icon: <TreePine size={28} />, title: 'Spacious Play Ground', desc: 'A large, well-maintained playground where students can play, exercise, and enjoy their physical activities freely.' },
 ];
 
 const classes = [
@@ -74,6 +75,11 @@ function StatCounter({ value, suffix, label }) {
 export default function Home() {
   return (
     <div className="home-page">
+      <SEO 
+        title="Home"
+        description="Waseela English Medium School in Anantapur offers quality education from Nursery to 10th Class. AC classrooms, Digital Panel Boards, expert educators &amp; affordable fees. Admissions open 2026–2027."
+        url="/"
+      />
 
       {/* ──── HERO ──── */}
       <section className="hero">
@@ -198,9 +204,9 @@ export default function Home() {
         <div className="container">
           <FadeUp className="text-center">
             <div className="section-tag" style={{ margin: '0 auto 16px' }}><Star size={12} /> Why Choose Us</div>
-            <h2 className="section-title">The Waseela Difference</h2>
+            <h2 className="section-title">Why Waseela is the Right Choice</h2>
             <div className="gold-divider center" />
-            <p className="section-subtitle">We go beyond textbooks to build confident, compassionate, and capable individuals.</p>
+            <p className="section-subtitle">Admissions Open 2026–2027 · Nursery to 10th Class · Building a World for Your Child.</p>
           </FadeUp>
           <StaggerParent className="grid-3" style={{ marginTop: 56 }}>
             {whyUs.map((item) => (

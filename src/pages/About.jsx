@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BookOpen, Target, Heart, Users, Star, CheckCircle } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
+import SEO from '../components/SEO';
 import './About.css';
 
 const values = [
@@ -27,6 +28,11 @@ const timeline = [
 export default function About() {
   return (
     <div>
+      <SEO 
+        title="About Us"
+        description="Learn about the history, mission, and vision of Waseela English Medium School. Quality education based on discipline and core values in Anantapur."
+        url="/about"
+      />
       {/* Page Header */}
       <div className="page-header">
         <div className="container page-header-content">

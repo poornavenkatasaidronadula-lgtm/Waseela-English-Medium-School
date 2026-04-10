@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, Utensils, Wifi } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Facilities.css';
 
 const facilities = [
@@ -58,6 +59,11 @@ const highlights = [
 export default function Facilities() {
   return (
     <div>
+      <SEO 
+        title="Facilities"
+        description="Discover the world-class facilities at Waseela English Medium School including smart classrooms, a modern library, science labs, and sports grounds."
+        url="/facilities"
+      />
       <div className="page-header">
         <div className="container page-header-content">
           <h1>Facilities</h1>

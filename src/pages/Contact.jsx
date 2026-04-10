@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { FadeUp } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const info = [
@@ -47,6 +48,11 @@ export default function Contact() {
 
   return (
     <div>
+      <SEO 
+        title="Contact Us"
+        description="Contact Waseela English Medium School in Anantapur. Address: KVS Nagar, NTR Marg. Call us at +91 7901314488."
+        url="/contact"
+      />
       <div className="page-header">
         <div className="container page-header-content">
           <h1>Contact Us</h1>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle, FileText, User, Phone, Mail, ChevronDown, Send } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Admissions.css';
 
 const steps = [
@@ -51,6 +52,11 @@ export default function Admissions() {
 
   return (
     <div>
+      <SEO 
+        title="Admissions"
+        description="Apply for admissions at Waseela English Medium School. Simple 5-step admission process for Nursery to Class X. Seats are limited, apply today."
+        url="/admissions"
+      />
       <div className="page-header">
         <div className="container page-header-content">
           <h1>Admissions</h1>

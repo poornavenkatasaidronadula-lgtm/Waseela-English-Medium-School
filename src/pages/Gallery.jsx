@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FadeUp } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Gallery.css';
 
 const categories = ['All', 'Classrooms', 'Events', 'Activities', 'Campus'];
@@ -32,6 +33,11 @@ export default function Gallery() {
 
   return (
     <div>
+      <SEO 
+        title="Gallery"
+        description="A visual journey through life at Waseela English Medium School. See our classrooms, campus events, and activities."
+        url="/gallery"
+      />
       <div className="page-header">
         <div className="container page-header-content">
           <h1>Gallery</h1>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BookOpen, Microscope, Palette, Dumbbell, Music, Globe } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
+import SEO from '../components/SEO';
 import './Academics.css';
 
 const classes = [
@@ -61,6 +62,11 @@ const methodology = [
 export default function Academics() {
   return (
     <div>
+      <SEO 
+        title="Academics"
+        description="Our holistic curriculum from Nursery to Class X is built for 21st-century learners. CBSE-aligned education with a strong teaching methodology."
+        url="/academics"
+      />
       <div className="page-header">
         <div className="container page-header-content">
           <h1>Academics</h1>

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
 import Preloader from './components/Preloader';
 import ScrollToTop from './components/ScrollToTop';
+import AdmissionPopup from './components/AdmissionPopup';
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -41,6 +42,7 @@ function App() {
       </main>
       <Footer />
       <FloatingActions />
+      <AdmissionPopup />
     </Router>
   );
 }

@@ -8,7 +8,7 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
   { to: '/academics', label: 'Academics' },
-  { to: '/admissions', label: 'Admissions' },
+  { to: '/admissions', label: 'Apply' },
   { to: '/facilities', label: 'Facilities' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/contact', label: 'Contact' },
@@ -64,7 +64,7 @@ export default function Navbar() {
             {/* CTA */}
             <div className="navbar-cta">
               <Link to="/admissions" className="btn btn-primary" style={{ padding: '10px 22px', fontSize: '0.85rem' }}>
-                Apply Now
+                Admissions
               </Link>
               <button
                 className="mobile-menu-btn"
@@ -118,7 +118,7 @@ export default function Navbar() {
 
             <div style={{ padding: '24px' }}>
               <Link to="/admissions" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
-                Apply Now
+                Admissions
               </Link>
             </div>
           </motion.div>

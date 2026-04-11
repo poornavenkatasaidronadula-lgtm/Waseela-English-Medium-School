@@ -63,7 +63,7 @@
 }
 
 .popup-left-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.15rem;
   color: #ffffff;
   line-height: 1.35;
@@ -148,7 +148,7 @@
 }
 
 .popup-form-title {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.35rem;
   color: #0B3D2E;
   font-weight: 700;
@@ -294,7 +294,7 @@
 }
 
 .popup-success h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #0B3D2E;
 }

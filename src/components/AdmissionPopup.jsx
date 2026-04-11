@@ -61,7 +61,7 @@ export default function AdmissionPopup() {
             {/* Left Panel */}
             <div className="popup-left">
               <img
-                src="/admission-popup.png"
+                src="/campus/DSC01826.JPG"
                 alt="Admission guidance"
                 className="popup-img"
               />

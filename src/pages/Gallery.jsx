@@ -9,18 +9,65 @@ import './Gallery.css';
 const categories = ['All', 'Classrooms', 'Events', 'Activities', 'Campus'];
 
 const allImages = [
-  { src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=420&fit=crop', cat: 'Classrooms', title: 'Smart Classroom Session' },
-  { src: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=420&fit=crop', cat: 'Campus', title: 'School Library' },
-  { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=420&fit=crop', cat: 'Campus', title: 'School Campus' },
-  { src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=420&fit=crop', cat: 'Events', title: 'Annual Day Celebration' },
-  { src: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=420&fit=crop', cat: 'Activities', title: 'Science Lab Work' },
-  { src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=420&fit=crop', cat: 'Activities', title: 'Project Presentation' },
-  { src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=420&fit=crop', cat: 'Activities', title: 'Sports Day' },
-  { src: 'https://images.unsplash.com/photo-1581726690015-c9861fa5057f?w=600&h=420&fit=crop', cat: 'Classrooms', title: 'Interactive Learning' },
-  { src: 'https://images.unsplash.com/photo-1564979395532-c5c5b2d1c7a2?w=600&h=420&fit=crop', cat: 'Activities', title: 'Chemistry Lab' },
-  { src: 'https://images.unsplash.com/photo-1491841651911-c44484a8efbd?w=600&h=420&fit=crop', cat: 'Events', title: 'Award Ceremony' },
-  { src: 'https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600&h=420&fit=crop', cat: 'Classrooms', title: 'Study Time' },
-  { src: 'https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=420&fit=crop', cat: 'Events', title: 'Cultural Programme' },
+  // ── Real School Photos ──
+  { src: '/DSC01529.JPG', cat: 'Classrooms', title: 'Classroom Activity' },
+  { src: '/DSC01543.JPG', cat: 'Classrooms', title: 'Learning Session' },
+  { src: '/DSC01548.JPG', cat: 'Classrooms', title: 'Student Engagement' },
+  { src: '/DSC01566.JPG', cat: 'Classrooms', title: 'Classroom Environment' },
+  { src: '/DSC01593.JPG', cat: 'Classrooms', title: 'Academic Session' },
+  { src: '/DSC01601.JPG', cat: 'Classrooms', title: 'Interactive Class' },
+  { src: '/DSC01693.JPG', cat: 'Classrooms', title: 'Hands-on Learning' },
+  { src: '/DSC01703.JPG', cat: 'Classrooms', title: 'Teacher & Students' },
+  { src: '/DSC01711.JPG', cat: 'Classrooms', title: 'Focused Learning' },
+  { src: '/DSC01729.JPG', cat: 'Classrooms', title: 'Classroom Discussion' },
+  { src: '/DSC01756.JPG', cat: 'Classrooms', title: 'School Day Moments' },
+  { src: '/DSC01805.JPG', cat: 'Classrooms', title: 'Student Activities' },
+  { src: '/DSC01764.JPG', cat: 'Classrooms', title: 'Classroom Moments' },
+  { src: '/DSC01782.JPG', cat: 'Classrooms', title: 'School Life' },
+  { src: '/DSC01783.JPG', cat: 'Classrooms', title: 'Learning Together' },
+  { src: '/DSC01791.JPG', cat: 'Classrooms', title: 'Student Focus' },
+  // ── Activities ──
+  { src: '/activities/DSC01620.JPG', cat: 'Activities', title: 'Activity 1' },
+  { src: '/activities/DSC01639.JPG', cat: 'Activities', title: 'Activity 2' },
+  { src: '/activities/DSC01648.JPG', cat: 'Activities', title: 'Activity 3' },
+  { src: '/activities/DSC01660.JPG', cat: 'Activities', title: 'Activity 4' },
+  { src: '/activities/DSC01669.JPG', cat: 'Activities', title: 'Activity 5' },
+  { src: '/activities/DSC01682.JPG', cat: 'Activities', title: 'Activity 6' },
+  { src: '/activities/DSC01688.JPG', cat: 'Activities', title: 'Activity 7' },
+  { src: '/activities/DSC01815.JPG', cat: 'Activities', title: 'Activity 8' },
+  { src: '/activities/DSC01819.JPG', cat: 'Activities', title: 'Activity 9' },
+  { src: '/activities/DSC01823.JPG', cat: 'Activities', title: 'Activity 10' },
+  { src: '/activities/KRA_0001.JPG', cat: 'Activities', title: 'Activity 11' },
+  { src: '/activities/KRA_0004.JPG', cat: 'Activities', title: 'Activity 12' },
+  // ── Events ──
+  { src: '/events/KRA_0006.JPG', cat: 'Events', title: 'Event Moments' },
+  { src: '/events/KRA_0015.JPG', cat: 'Events', title: 'School Celebration' },
+  { src: '/events/KRA_0017.JPG', cat: 'Events', title: 'Special Occasion' },
+  { src: '/events/KRA_0022.JPG', cat: 'Events', title: 'Student Performance' },
+  { src: '/events/KRA_0023.JPG', cat: 'Events', title: 'Campus Event' },
+  { src: '/events/KRA_0028.JPG', cat: 'Events', title: 'Gathering' },
+  { src: '/events/KRA_0029.JPG', cat: 'Events', title: 'Event Highlights' },
+  { src: '/events/KRA_0031.JPG', cat: 'Events', title: 'Festivity' },
+  { src: '/events/KRA_0038.JPG', cat: 'Events', title: 'Program Function' },
+  { src: '/events/KRA_0056.JPG', cat: 'Events', title: 'Performance' },
+  { src: '/events/KRA_0057.JPG', cat: 'Events', title: 'Campus Showcase' },
+  { src: '/events/KRA_0065.JPG', cat: 'Events', title: 'Ceremony' },
+  { src: '/events/KRA_0067.JPG', cat: 'Events', title: 'Annual Function' },
+  { src: '/events/KRA_0071.JPG', cat: 'Events', title: 'School Gathering' },
+  { src: '/events/KRA_0087.JPG', cat: 'Events', title: 'Celebration Moment' },
+  { src: '/events/KRA_0089.JPG', cat: 'Events', title: 'Event Activity' },
+  { src: '/events/KRA_0099.JPG', cat: 'Events', title: 'Event Display' },
+  { src: '/events/KRA_0106.JPG', cat: 'Events', title: 'School Activity' },
+  { src: '/events/KRA_0109.JPG', cat: 'Events', title: 'Group Photo' },
+  { src: '/events/KRA_0115.JPG', cat: 'Events', title: 'Special Memory' },
+  { src: '/events/KRA_0118.JPG', cat: 'Events', title: 'Function Highlights' },
+  { src: '/events/KRA_0122.JPG', cat: 'Events', title: 'Program Showcase' },
+  { src: '/events/KRA_0126.JPG', cat: 'Events', title: 'School Memory' },
+  // ── Campus ──
+  { src: '/campus/DSC01826.JPG', cat: 'Campus', title: 'Campus View' },
+  { src: '/campus/DSC01827.JPG', cat: 'Campus', title: 'Campus Facilities' },
+  { src: '/campus/DSC01831.JPG', cat: 'Campus', title: 'School Grounds' },
+  { src: '/campus/DSC01835.JPG', cat: 'Campus', title: 'School Building' },
 ];
 
 export default function Gallery() {
@@ -33,7 +80,7 @@ export default function Gallery() {
 
   return (
     <div>
-      <SEO 
+      <SEO
         title="Gallery"
         description="A visual journey through life at Waseela English Medium School. See our classrooms, campus events, and activities."
         url="/gallery"

@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   BookOpen, Award, Users, Star, Shield, Cpu, Dumbbell,
   ChevronRight, Quote, ArrowRight, CheckCircle, GraduationCap, Heart, Zap,
@@ -50,12 +51,12 @@ const testimonials = [
 ];
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=280&fit=crop',
-  'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=280&fit=crop',
-  'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=280&fit=crop',
-  'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=280&fit=crop',
-  'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=280&fit=crop',
-  'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=280&fit=crop',
+  '/campus/DSC01827.JPG',
+  '/KRA_0048.JPG',
+  '/DSC01566.JPG',
+  '/DSC01764.JPG',
+  '/activities/DSC01819.JPG',
+  '/events/KRA_0031.JPG',
 ];
 
 /* ── StatCounter ─────────────────────────────── */
@@ -73,9 +74,23 @@ function StatCounter({ value, suffix, label }) {
 
 /* ── Page ────────────────────────────────────── */
 export default function Home() {
+  const [heroIndex, setHeroIndex] = useState(0);
+  const heroBgs = [
+    '/campus/DSC01827.JPG',
+    '/KRA_0048.JPG',
+    '/events/KRA_0115.JPG'
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroIndex(prev => (prev + 1) % heroBgs.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="home-page">
-      <SEO 
+      <SEO
         title="Home"
         description="Waseela English Medium School in Anantapur offers quality education from Nursery to 10th Class. AC classrooms, Digital Panel Boards, expert educators &amp; affordable fees. Admissions open 2026–2027."
         url="/"
@@ -84,11 +99,19 @@ export default function Home() {
       {/* ──── HERO ──── */}
       <section className="hero">
         <div className="hero-bg">
-          <img
-            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&h=900&fit=crop"
-            alt="Students learning in school"
-            className="hero-img"
-          />
+          <AnimatePresence mode="popLayout" initial={false}>
+            <motion.img
+              key={heroIndex}
+              src={heroBgs[heroIndex]}
+              alt="School campus"
+              className="hero-img"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+              style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+          </AnimatePresence>
           <div className="hero-overlay" />
         </div>
         <div className="container hero-content">
@@ -156,7 +179,7 @@ export default function Home() {
             <FadeUp>
               <div className="about-img-stack">
                 <img
-                  src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=550&h=420&fit=crop"
+                  src="DSC01566.JPG"
                   alt="School building"
                   className="about-main-img"
                 />
@@ -261,7 +284,7 @@ export default function Home() {
           <div className="facilities-layout" style={{ marginTop: 56 }}>
             <FadeUp className="facilities-main-img">
               <img
-                src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=640&h=480&fit=crop"
+                src="DSC01543.JPG"
                 alt="School facilities"
               />
               <div className="facilities-img-overlay">
@@ -342,7 +365,7 @@ export default function Home() {
               </ScaleIn>
             ))}
           </div>
-          <FadeUp className="text-center" style={{ marginTop: 40 }}>
+          <FadeUp className="text-center" style={{ marginTop: 72 }}>
             <Link to="/gallery" className="btn btn-outline-green">
               View Full Gallery <ArrowRight size={16} />
             </Link>

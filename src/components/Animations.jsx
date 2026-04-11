@@ -11,13 +11,14 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.12 } },
 };
 
-export function FadeUp({ children, delay = 0, className = '' }) {
+export function FadeUp({ children, delay = 0, className = '', style = {} }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
   return (
     <motion.div
       ref={ref}
       className={className}
+      style={style}
       variants={fadeUp}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
@@ -28,13 +29,14 @@ export function FadeUp({ children, delay = 0, className = '' }) {
   );
 }
 
-export function StaggerParent({ children, className = '' }) {
+export function StaggerParent({ children, className = '', style = {} }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
   return (
     <motion.div
       ref={ref}
       className={className}
+      style={style}
       variants={stagger}
       initial="hidden"
       animate={inView ? 'visible' : 'hidden'}
@@ -44,21 +46,22 @@ export function StaggerParent({ children, className = '' }) {
   );
 }
 
-export function StaggerChild({ children, className = '' }) {
+export function StaggerChild({ children, className = '', style = {} }) {
   return (
-    <motion.div className={className} variants={fadeUp}>
+    <motion.div className={className} style={style} variants={fadeUp}>
       {children}
     </motion.div>
   );
 }
 
-export function ScaleIn({ children, delay = 0, className = '' }) {
+export function ScaleIn({ children, delay = 0, className = '', style = {} }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
   return (
     <motion.div
       ref={ref}
       className={className}
+      style={style}
       initial={{ opacity: 0, scale: 0.85 }}
       animate={inView ? { opacity: 1, scale: 1 } : {}}
       transition={{ duration: 0.5, delay, ease: 'easeOut' }}

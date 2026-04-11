@@ -176,22 +176,20 @@
   background: linear-gradient(160deg, var(--cream) 0%, #f0f7f4 100%);
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
 
-/* For 5 cards: last 2 items center-align */
-.grid-3 > *:nth-child(4) {
-  grid-column: 1 / 2;
-  margin-left: auto;
-  width: 100%;
-}
-.grid-3 > *:nth-child(5) {
-  grid-column: 2 / 3;
-  margin-right: auto;
-  width: 100%;
+
+/* For 5 cards: last 2 items on desktop */
+@media (min-width: 769px) {
+  .why-section .grid-3 > *:nth-child(4) {
+    grid-column: 1 / 2;
+    margin-left: auto;
+    width: 100%;
+  }
+  .why-section .grid-3 > *:nth-child(5) {
+    grid-column: 2 / 3;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
 .why-card {

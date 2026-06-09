@@ -10,7 +10,7 @@ const facilities = [
     title: 'Smart Classrooms',
     desc: 'Every classroom is equipped with HD interactive smart boards, projectors, and digital teaching tools that make learning visual, engaging, and effective.',
     features: ['Interactive Smart Boards', 'HD Projectors', 'Digital Learning Apps', 'Ergonomic Furniture'],
-    img: '/Classroom.jpeg',
+    img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop',
   },
   {
     icon: <FlaskConical size={32} />,
@@ -38,7 +38,7 @@ const facilities = [
     title: 'Sports Activities',
     desc: 'A spacious, well-maintained playground that supports cricket, football, kabaddi, and indoor games — promoting physical fitness and teamwork.',
     features: ['Cricket & Football Fields', 'Kabaddi Ground', 'Indoor Games Room', 'Annual Sports Day'],
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop',
+    img: '/activities/DSC01819.JPG',
   },
   {
     icon: <Bus size={32} />,

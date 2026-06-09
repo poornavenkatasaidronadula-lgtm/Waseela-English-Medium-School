@@ -198,10 +198,28 @@ export default function About() {
               <h2 className="section-title">Board of Directors' Message</h2>
               <div className="gold-divider" />
               <div className="principal-quote">"</div>
-              <p>
-                Our vision is to build a foundation of excellence where modern education meets strong moral values. We are committed to providing world-class facilities and empowering every student to become a confident, responsible, and successful leader of tomorrow.
+              <p style={{ marginBottom: 16 }}>
+                Dear Parents, Students, and Well-Wishers,
               </p>
-              <div className="principal-signature">— Board of Directors, Waseela English Medium School</div>
+              <p style={{ marginBottom: 16 }}>
+                Welcome to Waseela English Medium School, a place where education goes beyond textbooks and classrooms. Our vision is to provide every child with a strong foundation of knowledge, character, and confidence that prepares them for a successful future.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                We believe that every child possesses unique talents and abilities. Our responsibility is to nurture these qualities through quality education, innovative teaching methods, and a supportive learning environment. Along with academic excellence, we emphasize discipline, integrity, compassion, and leadership—values that help students become responsible citizens and future leaders.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                At Waseela English Medium School, we are committed to creating an atmosphere where students are encouraged to think creatively, explore new ideas, and develop a lifelong love for learning. Our dedicated faculty and staff work tirelessly to ensure that every student receives the guidance, encouragement, and opportunities needed to reach their full potential.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Education is a partnership between the school and parents. Together, we can provide our children with the best possible environment for growth and success. We thank all parents for their trust and support and invite you to be a part of our journey in shaping bright futures.
+              </p>
+              <p style={{ marginBottom: 32 }}>
+                We look forward to inspiring young minds, building strong character, and creating future leaders who will make a positive impact on society.
+              </p>
+              <div className="principal-signature">
+                Best Wishes,<br /><br />
+                — Board of Directors, Waseela English Medium School
+              </div>
             </div>
           </FadeUp>
         </div>

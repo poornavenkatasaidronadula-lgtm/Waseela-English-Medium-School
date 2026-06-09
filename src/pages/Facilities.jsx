@@ -24,7 +24,7 @@ const facilities = [
     title: 'Computer Lab',
     desc: 'A modern computer laboratory with high-speed internet, age-appropriate software, and structured lessons in digital literacy and coding basics.',
     features: ['High-Speed Broadband', 'Coding & Digital Literacy', 'Safe Internet Filters'],
-    img: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop',
+    img: '/Computer Lab.jpeg',
   },
   {
     icon: <BookOpen size={32} />,

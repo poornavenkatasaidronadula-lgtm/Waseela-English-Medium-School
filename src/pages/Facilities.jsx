@@ -17,7 +17,7 @@ const facilities = [
     title: 'Science Lab',
     desc: 'A fully equipped science laboratory where students conduct real experiments in Physics, Chemistry, and Biology — bringing textbook concepts to life.',
     features: ['Physics Lab Equipment', 'Chemistry Lab with Safety Gear', 'Biology Specimens & Microscopes', 'Trained Lab Assistants'],
-    img: '/science_lab.png',
+    img: '/Science Lab.jpeg',
   },
   {
     icon: <Wifi size={32} />,

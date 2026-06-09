@@ -17,13 +17,7 @@ const team = [
   { name: 'Head of Arts', role: 'Co-curricular Director', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&face' },
 ];
 
-const timeline = [
-  { year: '2008', title: 'Founded', desc: 'Waseela English Medium School was established in Old Town, Anantapur with 80 students.' },
-  { year: '2012', title: 'Expanded to Class X', desc: 'We added Classes IX–X and achieved 100% pass rate in the first board examination.' },
-  { year: '2016', title: 'Digital Classrooms', desc: 'Launched smart classroom initiative with interactive boards and digital learning tools.' },
-  { year: '2020', title: 'Online Learning', desc: 'Successfully transitioned to hybrid learning during challenging times, ensuring continuity.' },
-  { year: '2024', title: 'New Labs & Library', desc: 'Inaugurated a modern science lab and a 5,000-book library for our growing community.' },
-];
+
 
 export default function About() {
   return (
@@ -37,7 +31,7 @@ export default function About() {
       <div className="page-header">
         <div className="container page-header-content">
           <h1>About Us</h1>
-          <p>Nurturing young minds since 2008 in the heart of Anantapur</p>
+          <p>Nurturing young minds in the heart of Anantapur</p>
           <div className="breadcrumb">
             <Link to="/">Home</Link>
             <span>/</span>

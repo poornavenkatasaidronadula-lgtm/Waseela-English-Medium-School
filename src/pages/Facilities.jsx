@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, Wifi, Home, Camera } from 'lucide-react';
+import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, Wifi, Home, Camera, AirVent } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
 import SEO from '../components/SEO';
 import './Facilities.css';

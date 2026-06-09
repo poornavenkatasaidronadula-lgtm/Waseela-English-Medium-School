@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="footer-top-strip">
         <div className="container">
           <div className="footer-strip-inner">
-            <span>📞 +91 7901314488 &nbsp;|&nbsp; +91 7093441703</span>
+            <span>📞 +91 7901314488 &nbsp;|&nbsp; +91 7093417793</span>
             <span>✉️ Waseelaenglishmediumschool@gmail.com</span>
             <span>⏰ Mon – Sat: 9AM – 4PM</span>
           </div>

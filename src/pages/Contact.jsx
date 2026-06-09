@@ -15,8 +15,8 @@ const info = [
   {
     icon: <Phone size={24} />,
     title: 'Phone Numbers',
-    lines: ['+91 7901314488', '+91 7093441703'],
-    links: ['tel:+917901314488', 'tel:+917093441703'],
+    lines: ['+91 7901314488', '+91 7093417793'],
+    links: ['tel:+917901314488', 'tel:+917093417793'],
   },
   {
     icon: <Mail size={24} />,
@@ -48,7 +48,7 @@ export default function Contact() {
 
   return (
     <div>
-      <SEO 
+      <SEO
         title="Contact Us"
         description="Contact Waseela English Medium School in Anantapur. Address: KVS Nagar, NTR Marg. Call us at +91 7901314488."
         url="/contact"

@@ -45,28 +45,28 @@ export default function Admissions() {
     e.preventDefault();
     setLoading(true);
 
-    const message = `*================================*
-      *NEW ADMISSION INQUIRY*
-*================================*
+    const message = `================================
+NEW ADMISSION INQUIRY
+================================
 
-👤 *Student Details*
-• *Name:* ${form.studentName}
-• *DOB:* ${form.dob}
-• *Class Applied:* ${form.applyClass}
+👤 Student Details
+• Name: ${form.studentName}
+• DOB: ${form.dob}
+• Class Applied: ${form.applyClass}
 
-👨‍👩‍👦 *Parent Details*
-• *Father's Name:* ${form.fatherName}
-• *Mother's Name:* ${form.motherName || 'N/A'}
-• *Contact Number:* ${form.phone}
-• *Email:* ${form.email || 'N/A'}
+👨‍👩‍👦 Parent Details
+• Father's Name: ${form.fatherName}
+• Mother's Name: ${form.motherName || 'N/A'}
+• Contact Number: ${form.phone}
+• Email: ${form.email || 'N/A'}
 
-🏠 *Address*
+🏠 Address
 ${form.address}
 
-📝 *Additional Message*
+📝 Additional Message
 ${form.message || 'N/A'}
 
-*================================*`;
+================================`;
 
     const whatsappNumber = '919030499487';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

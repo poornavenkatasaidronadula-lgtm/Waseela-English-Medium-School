@@ -52,7 +52,7 @@ const facilities = [
     title: 'Hostel Facility',
     desc: 'A comfortable and supervised hostel facility providing students with a secure, homely environment with nutritious meals and academic support.',
     features: ['Separate Boys & Girls Hostels', 'Nutritious Meals', '24/7 Supervision', 'Study Hall Access'],
-    img: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop',
+    img: '/Hostel.jpeg',
   },
   {
     icon: <Camera size={32} />,

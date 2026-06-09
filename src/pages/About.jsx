@@ -22,7 +22,7 @@ const team = [
 export default function About() {
   return (
     <div>
-      <SEO 
+      <SEO
         title="About Us"
         description="Learn about the history, mission, and vision of Waseela English Medium School. Quality education based on discipline and core values in Anantapur."
         url="/about"
@@ -195,7 +195,7 @@ export default function About() {
           <FadeUp>
             <div className="principal-message">
               <div className="section-tag"><Star size={12} /> Leadership</div>
-              <h2 className="section-title">Board of Directors' Message</h2>
+              <h2 className="section-title">Board of Director's Message</h2>
               <div className="gold-divider" />
               <div className="principal-quote">"</div>
               <p style={{ marginBottom: 16 }}>

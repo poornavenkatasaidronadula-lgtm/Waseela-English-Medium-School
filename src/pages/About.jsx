@@ -167,17 +167,8 @@ export default function About() {
               <h2 className="section-title">Principal's Message</h2>
               <div className="gold-divider" />
               <div className="principal-quote">"</div>
-              <p style={{ marginBottom: 18 }}>
-                Welcome to Waseela English Medium School — a place where every child's potential is recognized, nurtured, and celebrated.
-                Education is not merely the accumulation of knowledge; it is the cultivation of wisdom, character, and purpose.
-              </p>
-              <p style={{ marginBottom: 18 }}>
-                At Waseela, we are committed to creating an environment where curiosity thrives, creativity flourishes, and every student
-                feels safe, seen, and supported. Our dedicated faculty and staff work tirelessly to provide the best possible learning experience.
-              </p>
               <p>
-                Together — parents, teachers, and students — we form a powerful partnership for your child's bright future.
-                I warmly invite you to join the Waseela family.
+                We strive to create an environment where every child feels inspired to learn, explore, and achieve.
               </p>
               <div className="principal-signature">— The Principal, Waseela English Medium School</div>
             </div>

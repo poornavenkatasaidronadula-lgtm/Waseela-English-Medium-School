@@ -10,7 +10,7 @@ const facilities = [
     title: 'Smart Classrooms',
     desc: 'Every classroom is equipped with HD interactive smart boards, projectors, and digital teaching tools that make learning visual, engaging, and effective.',
     features: ['Interactive Smart Boards', 'HD Projectors', 'Digital Learning Apps', 'Ergonomic Furniture'],
-    img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop',
+    img: '/Classroom.jpeg',
   },
   {
     icon: <FlaskConical size={32} />,

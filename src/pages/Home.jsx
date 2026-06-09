@@ -232,7 +232,7 @@ export default function Home() {
                 <h2 className="section-title">A Legacy of Quality  Education</h2>
                 <div className="gold-divider" />
                 <p style={{ marginBottom: 20 }}>
-                  Waseela English Medium School has been a beacon of quality education in Anantapur for over 15 years.
+                  Waseela English Medium School has been a beacon of quality education in Anantapur since 2008.
                   We nurture students from Nursery through Class X in an environment built on discipline, respect, and intellectual curiosity.
                 </p>
                 <p style={{ marginBottom: 32 }}>

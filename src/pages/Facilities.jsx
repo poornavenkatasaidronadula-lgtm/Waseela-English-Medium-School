@@ -60,6 +60,7 @@ const facilities = [
     desc: 'A comprehensive campus security system with 24/7 CCTV surveillance ensuring the highest standards of child safety at all times.',
     features: ['24/7 CCTV Surveillance', 'Trained Security Personnel', 'Biometric Entry System', 'Emergency Response Plan'],
     img: '/CCTV.jpeg',
+    objectFit: 'contain',
   },
 ];
 
@@ -108,8 +109,8 @@ export default function Facilities() {
           {facilities.map((f, i) => (
             <FadeUp key={f.title}>
               <div className={`facility-row ${i % 2 === 1 ? 'reverse' : ''}`}>
-                <div className="facility-img-wrap">
-                  <img src={f.img} alt={f.title} />
+                <div className="facility-img-wrap" style={{ background: f.objectFit === 'contain' ? '#fff' : 'transparent' }}>
+                  <img src={f.img} alt={f.title} style={f.objectFit ? { objectFit: f.objectFit } : {}} />
                   <div className="facility-icon-badge">
                     {f.icon}
                   </div>

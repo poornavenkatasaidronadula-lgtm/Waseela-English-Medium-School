@@ -99,14 +99,7 @@ export default function Academics() {
                     <span className="badge badge-green" style={{ marginLeft: 'auto' }}>{cls.age}</span>
                   </div>
                   <p className="academic-desc">{cls.desc}</p>
-                  <div className="academic-subjects">
-                    <div className="academic-subjects-label">Core Subjects</div>
-                    <div className="subject-tags">
-                      {cls.subjects.map(s => (
-                        <span key={s} className="subject-tag">{s}</span>
-                      ))}
-                    </div>
-                  </div>
+
                 </div>
               </StaggerChild>
             ))}

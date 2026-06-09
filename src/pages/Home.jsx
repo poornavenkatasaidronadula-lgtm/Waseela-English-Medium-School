@@ -14,7 +14,7 @@ import './Home.css';
 
 /* ── Data ────────────────────────────────────── */
 const stats = [
-  { value: 800, suffix: '+', label: 'Happy Students' },
+  { value: 300, suffix: '+', label: 'Happy Students' },
   { value: 25, suffix: '+', label: 'Expert Teachers' },
   { value: 15, suffix: '+', label: 'Years of Excellence' },
   { value: 98, suffix: '%', label: 'Pass Rate' },
@@ -179,7 +179,7 @@ export default function Home() {
             <FadeUp>
               <div className="about-img-stack">
                 <img
-                  src="DSC01566.JPG"
+                  src="/campus/DSC01827.JPG"
                   alt="School building"
                   className="about-main-img"
                 />

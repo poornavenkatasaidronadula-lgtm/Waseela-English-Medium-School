@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, Utensils, Wifi } from 'lucide-react';
+import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, AirVent, Wifi } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
 import SEO from '../components/SEO';
 import './Facilities.css';
@@ -15,15 +15,15 @@ const facilities = [
   {
     icon: <BookOpen size={32} />,
     title: 'Modern Library',
-    desc: 'A curated collection of over 5,000 books across all subjects and genres, plus digital resources, periodicals, and a quiet reading lounge for focused study.',
-    features: ['5,000+ Book Collection', 'Digital Resources & E-Books', 'Quiet Study Lounge', 'Regular Book Additions'],
+    desc: 'A curated collection of books across all subjects and genres, plus digital resources, periodicals, and a quiet reading lounge for focused study.',
+    features: ['Digital Resources & E-Books', 'Quiet Study Lounge', 'Regular Book Additions'],
     img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop',
   },
   {
     icon: <Dumbbell size={32} />,
     title: 'Sports Ground',
     desc: 'A spacious, well-maintained playground that supports cricket, football, kabaddi, basketball, and athletics — promoting physical fitness and teamwork.',
-    features: ['Cricket & Football Fields', 'Basketball Court', 'Athletics Track', 'Indoor Games Room'],
+    features: ['Cricket & Football Fields', 'Kabaddi Ground', 'Indoor Games Room'],
     img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop',
   },
   {
@@ -31,7 +31,7 @@ const facilities = [
     title: 'Science Lab',
     desc: 'A fully equipped science laboratory where students conduct real experiments in Physics, Chemistry, and Biology — bringing textbook concepts to life.',
     features: ['Physics Lab Equipment', 'Chemistry Lab with Safety Gear', 'Biology Specimens & Microscopes', 'Trained Lab Assistants'],
-    img: 'https://images.unsplash.com/photo-1564979395532-c5c5b2d1c7a2?w=600&h=400&fit=crop',
+    img: '/science_lab.png',
   },
   {
     icon: <Shield size={32} />,
@@ -44,14 +44,14 @@ const facilities = [
     icon: <Wifi size={32} />,
     title: 'Computer Lab',
     desc: 'A modern computer laboratory with high-speed internet, age-appropriate software, and structured lessons in digital literacy and coding basics.',
-    features: ['40+ Modern Computers', 'High-Speed Broadband', 'Coding & Digital Literacy', 'Safe Internet Filters'],
+    features: ['High-Speed Broadband', 'Coding & Digital Literacy', 'Safe Internet Filters'],
     img: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop',
   },
 ];
 
 const highlights = [
   { icon: <Bus size={22} />, title: 'School Transport', desc: 'Safe and reliable transport routes covering key areas of Anantapur.' },
-  { icon: <Utensils size={22} />, title: 'Hygienic Canteen', desc: 'Nutritious, affordable meals prepared under strict hygiene standards.' },
+  { icon: <AirVent size={22} />, title: 'AC Classrooms', desc: 'All classrooms are fully air-conditioned, ensuring a comfortable learning environment throughout the year.' },
   { icon: <Wifi size={22} />, title: 'Campus Wi-Fi', desc: 'High-speed internet across the campus for research and digital learning.' },
   { icon: <Shield size={22} />, title: 'First Aid Room', desc: 'A dedicated medical room with trained first aid staff for student welfare.' },
 ];

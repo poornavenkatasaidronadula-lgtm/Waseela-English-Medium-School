@@ -53,14 +53,9 @@ export default function About() {
             <FadeUp>
               <div className="about-img-group">
                 <img
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop"
-                  alt="School front"
+                  src="/campus/DSC01827.JPG"
+                  alt="School campus"
                   className="about-intro-img main"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1581726690015-c9861fa5057f?w=300&h=220&fit=crop"
-                  alt="Classroom"
-                  className="about-intro-img secondary"
                 />
               </div>
             </FadeUp>
@@ -74,7 +69,7 @@ export default function About() {
                   education to the children of Anantapur. Founded in 2008 in KVS Nagar, Old Town, we began with 80 students and a passionate team of 8 teachers.
                 </p>
                 <p style={{ marginBottom: 18 }}>
-                  Today, we proudly serve over 800 students from Nursery to Class X, maintaining our founding commitment to academic excellence,
+                  Today, we proudly serve over 300 students from Nursery to Class X, maintaining our founding commitment to academic excellence,
                   strong values, and holistic development.
                 </p>
                 <p>
@@ -82,7 +77,7 @@ export default function About() {
                 </p>
                 <div style={{ display: 'flex', gap: 24, marginTop: 36, flexWrap: 'wrap' }}>
                   <div className="about-stat">
-                    <div className="about-stat-num">800+</div>
+                    <div className="about-stat-num">300+</div>
                     <div className="about-stat-label">Students</div>
                   </div>
                   <div className="about-stat">
@@ -169,70 +164,31 @@ export default function About() {
       {/* Principal Message */}
       <section className="section principal-section">
         <div className="container">
-          <div className="principal-grid">
-            <FadeUp>
-              <div className="principal-img-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=480&fit=crop"
-                  alt="School Principal"
-                />
-                <div className="principal-badge">
-                  <div style={{ fontWeight: 700, color: 'var(--primary)', fontSize: '0.92rem' }}>School Principal</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-light)' }}>M.Ed., 20 Years Experience</div>
-                </div>
-              </div>
-            </FadeUp>
-            <FadeUp delay={0.15}>
-              <div className="principal-message">
-                <div className="section-tag"><Star size={12} /> From the Desk of</div>
-                <h2 className="section-title">Principal's Message</h2>
-                <div className="gold-divider" />
-                <div className="principal-quote">"</div>
-                <p style={{ marginBottom: 18 }}>
-                  Welcome to Waseela English Medium School — a place where every child's potential is recognized, nurtured, and celebrated.
-                  Education is not merely the accumulation of knowledge; it is the cultivation of wisdom, character, and purpose.
-                </p>
-                <p style={{ marginBottom: 18 }}>
-                  At Waseela, we are committed to creating an environment where curiosity thrives, creativity flourishes, and every student
-                  feels safe, seen, and supported. Our dedicated faculty and staff work tirelessly to provide the best possible learning experience.
-                </p>
-                <p>
-                  Together — parents, teachers, and students — we form a powerful partnership for your child's bright future.
-                  I warmly invite you to join the Waseela family.
-                </p>
-                <div className="principal-signature">— The Principal, Waseela English Medium School</div>
-              </div>
-            </FadeUp>
-          </div>
+          <FadeUp>
+            <div className="principal-message">
+              <div className="section-tag"><Star size={12} /> From the Desk of</div>
+              <h2 className="section-title">Principal's Message</h2>
+              <div className="gold-divider" />
+              <div className="principal-quote">"</div>
+              <p style={{ marginBottom: 18 }}>
+                Welcome to Waseela English Medium School — a place where every child's potential is recognized, nurtured, and celebrated.
+                Education is not merely the accumulation of knowledge; it is the cultivation of wisdom, character, and purpose.
+              </p>
+              <p style={{ marginBottom: 18 }}>
+                At Waseela, we are committed to creating an environment where curiosity thrives, creativity flourishes, and every student
+                feels safe, seen, and supported. Our dedicated faculty and staff work tirelessly to provide the best possible learning experience.
+              </p>
+              <p>
+                Together — parents, teachers, and students — we form a powerful partnership for your child's bright future.
+                I warmly invite you to join the Waseela family.
+              </p>
+              <div className="principal-signature">— The Principal, Waseela English Medium School</div>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section" style={{ background: 'var(--cream)' }}>
-        <div className="container">
-          <FadeUp className="text-center">
-            <div className="section-tag" style={{ margin: '0 auto 16px' }}><Star size={12} /> Our Journey</div>
-            <h2 className="section-title">Milestones &amp; Growth</h2>
-            <div className="gold-divider center" />
-          </FadeUp>
-          <div className="timeline-wrap" style={{ marginTop: 64, maxWidth: 720, margin: '64px auto 0' }}>
-            <div className="timeline">
-              {timeline.map((item, i) => (
-                <FadeUp key={item.year} delay={i * 0.1}>
-                  <div className="timeline-item">
-                    <div className="timeline-dot" />
-                    <div className="timeline-year">{item.year}</div>
-                    <div className="timeline-body">
-                      <h4>{item.title}</h4>
-                      <p>{item.desc}</p>
-                    </div>
-                  </div>
-                </FadeUp>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

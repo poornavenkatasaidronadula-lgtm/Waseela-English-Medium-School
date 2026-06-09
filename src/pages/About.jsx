@@ -161,10 +161,30 @@ export default function About() {
               <h2 className="section-title">Principal's Message</h2>
               <div className="gold-divider" />
               <div className="principal-quote">"</div>
-              <p>
-                We strive to create an environment where every child feels inspired to learn, explore, and achieve.
+              <p style={{ marginBottom: 16 }}>
+                Dear Parents, Students, and Visitors,
               </p>
-              <div className="principal-signature">— The Principal, Waseela English Medium School</div>
+              <p style={{ marginBottom: 16 }}>
+                It is my pleasure to welcome you to Waseela English Medium School, where learning is nurtured with care, dedication, and excellence. We believe that education is the foundation upon which successful futures are built, and our goal is to provide every student with the knowledge, skills, and values needed to thrive in an ever-changing world.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                At Waseela English Medium School, we strive to create a positive and stimulating learning environment where students feel encouraged to explore their potential, develop their talents, and achieve academic excellence. Our dedicated teachers work tirelessly to inspire curiosity, creativity, critical thinking, and a lifelong passion for learning.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                While academic achievement remains an important focus, we equally emphasize character building, discipline, leadership, and social responsibility. We believe that true education shapes not only the mind but also the heart, helping students grow into confident, compassionate, and responsible individuals.
+              </p>
+              <p style={{ marginBottom: 16 }}>
+                Our school is committed to fostering strong partnerships between parents, teachers, and students. Together, we can create an environment that supports holistic development and empowers every child to reach their highest potential.
+              </p>
+              <p style={{ marginBottom: 32 }}>
+                I invite you to become a part of the Waseela family and join us in our mission of nurturing young minds, building strong character, and shaping bright futures.<br /><br />
+                Thank you for your trust and support. We look forward to guiding our students on their journey toward excellence and success.
+              </p>
+              <div className="principal-signature">
+                Warm Regards,<br />
+                Principal<br />
+                Waseela English Medium School
+              </div>
             </div>
           </FadeUp>
         </div>

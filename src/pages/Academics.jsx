@@ -46,7 +46,7 @@ const classes = [
 const activities = [
   { icon: <Palette size={24} />, title: 'Arts & Crafts', desc: 'Painting, drawing, sculpture — nurturing artistic expression and creativity.' },
   { icon: <Dumbbell size={24} />, title: 'Sports & Athletics', desc: 'Cricket, football, kabaddi, and athletics for physical fitness and teamwork.' },
-  { icon: <Music size={24} />, title: 'Music & Dance', desc: 'Classical and contemporary forms that instil cultural appreciation and confidence.' },
+
   { icon: <Globe size={24} />, title: 'Debates & Quiz', desc: 'Interschool competitions sharpening communication, reasoning, and general knowledge.' },
   { icon: <Microscope size={24} />, title: 'Science Club', desc: 'Hands-on experiments and projects that make science exciting and relevant.' },
   { icon: <BookOpen size={24} />, title: 'Reading Club', desc: 'A love of reading fostered through guided library sessions and storytelling events.' },

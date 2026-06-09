@@ -16,7 +16,7 @@ import './Home.css';
 const stats = [
   { value: 300, suffix: '+', label: 'Happy Students' },
   { value: 25, suffix: '+', label: 'Expert Teachers' },
-  { value: 15, suffix: '+', label: 'Years of Excellence' },
+  { value: 10, suffix: '+', label: 'Modern Facilities' },
   { value: 98, suffix: '%', label: 'Pass Rate' },
 ];
 

@@ -31,7 +31,7 @@ const facilities = [
     title: 'Library',
     desc: 'A curated collection of books across all subjects and genres, plus digital resources, periodicals, and a quiet reading lounge for focused study.',
     features: ['Digital Resources & E-Books', 'Quiet Study Lounge', 'Regular Book Additions'],
-    img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop',
+    img: '/Library.jpeg',
   },
   {
     icon: <Dumbbell size={32} />,

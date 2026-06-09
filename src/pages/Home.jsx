@@ -76,17 +76,36 @@ function StatCounter({ value, suffix, label }) {
 /* ── Page ────────────────────────────────────── */
 export default function Home() {
   const [heroIndex, setHeroIndex] = useState(0);
+  const [facilityIndex, setFacilityIndex] = useState(0);
+
   const heroBgs = [
     '/campus/DSC01827.JPG',
     '/KRA_0048.JPG',
     '/events/KRA_0115.JPG'
   ];
 
+  const facilityBgs = [
+    '/DSC01566.JPG',
+    '/DSC01601.JPG',
+    '/DSC01805.JPG',
+    '/DSC01783.JPG',
+    '/events/KRA_0122.JPG',
+    '/events/KRA_0067.JPG'
+  ];
+
   useEffect(() => {
-    const timer = setInterval(() => {
+    const heroTimer = setInterval(() => {
       setHeroIndex(prev => (prev + 1) % heroBgs.length);
     }, 4500);
-    return () => clearInterval(timer);
+
+    const facilityTimer = setInterval(() => {
+      setFacilityIndex(prev => (prev + 1) % facilityBgs.length);
+    }, 3500);
+
+    return () => {
+      clearInterval(heroTimer);
+      clearInterval(facilityTimer);
+    };
   }, []);
 
   return (
@@ -298,10 +317,18 @@ export default function Home() {
           </FadeUp>
           <div className="facilities-layout" style={{ marginTop: 56 }}>
             <FadeUp className="facilities-main-img">
-              <img
-                src="DSC01543.JPG"
-                alt="School facilities"
-              />
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={facilityIndex}
+                  src={facilityBgs[facilityIndex]}
+                  alt="School facilities"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1 }}
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </AnimatePresence>
               <div className="facilities-img-overlay">
                 <Link to="/facilities" className="btn btn-primary">
                   View All Facilities <ArrowRight size={16} />

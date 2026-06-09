@@ -59,7 +59,7 @@ const facilities = [
     title: 'CCTV Security',
     desc: 'A comprehensive campus security system with 24/7 CCTV surveillance ensuring the highest standards of child safety at all times.',
     features: ['24/7 CCTV Surveillance', 'Trained Security Personnel', 'Biometric Entry System', 'Emergency Response Plan'],
-    img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop',
+    img: '/CCTV.jpeg',
   },
 ];
 

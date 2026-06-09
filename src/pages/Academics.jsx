@@ -24,7 +24,7 @@ const classes = [
     desc: 'Strong foundational education developing literacy, numeracy, and scientific thinking through interactive lessons.',
   },
   {
-    level: 'Middle School',
+    level: 'Upper Primary',
     classes: 'Class VI – VIII',
     emoji: '🔬',
     age: 'Ages 12 – 14',
@@ -33,7 +33,7 @@ const classes = [
     desc: 'Deepening subject knowledge with analytical thinking, lab experiments, and project-based learning.',
   },
   {
-    level: 'Secondary School',
+    level: 'High School Programs',
     classes: 'Class IX – X',
     emoji: '🎓',
     age: 'Ages 15 – 16',

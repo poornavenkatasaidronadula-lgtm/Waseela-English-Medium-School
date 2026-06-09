@@ -6,11 +6,10 @@ import SEO from '../components/SEO';
 import './Admissions.css';
 
 const steps = [
-  { num: '01', icon: <FileText size={22} />, title: 'Submit Application', desc: 'Fill out and submit the online admission form with your child\'s details.' },
-  { num: '02', icon: <CheckCircle size={22} />, title: 'Document Verification', desc: 'Upload the required documents. Our team reviews them within 2–3 working days.' },
-  { num: '03', icon: <User size={22} />, title: 'Student Assessment', desc: 'A friendly interaction/assessment helps us understand your child\'s learning level.' },
-  { num: '04', icon: <Phone size={22} />, title: 'School Visit', desc: 'Parents are invited for a campus tour and a meeting with the Principal.' },
-  { num: '05', icon: <Mail size={22} />, title: 'Admission Confirmed', desc: 'Receive your admission confirmation letter and fee details. Welcome to Waseela!' },
+  { num: '01', icon: <Phone size={22} />, title: 'Submit Enquiry', desc: 'Fill out our simple online form or call us to express your interest in admissions.' },
+  { num: '02', icon: <User size={22} />, title: 'Visit Campus', desc: 'Parents and children are invited for a guided campus tour and a meeting with our faculty.' },
+  { num: '03', icon: <FileText size={22} />, title: 'Complete Application', desc: 'Submit the formal application form along with the necessary supporting documents.' },
+  { num: '04', icon: <CheckCircle size={22} />, title: 'Confirm Admission', desc: 'Receive your confirmation letter and complete the fee payment to secure the seat.' },
 ];
 
 const eligibility = [
@@ -54,7 +53,7 @@ export default function Admissions() {
     <div>
       <SEO 
         title="Admissions"
-        description="Apply for admissions at Waseela English Medium School. Simple 5-step admission process for Nursery to Class X. Seats are limited, apply today."
+        description="Apply for admissions at Waseela English Medium School. Simple 4-step admission process for Nursery to Class X. Seats are limited, apply today."
         url="/admissions"
       />
       <div className="page-header">
@@ -72,7 +71,7 @@ export default function Admissions() {
         <div className="container">
           <FadeUp className="text-center">
             <div className="section-tag" style={{ margin: '0 auto 16px' }}><FileText size={12} /> How to Apply</div>
-            <h2 className="section-title">Simple 5-Step Admission Process</h2>
+            <h2 className="section-title">Simple 4-Step Admission Process</h2>
             <div className="gold-divider center" />
             <p className="section-subtitle">We've made the admission process smooth and transparent for every family.</p>
           </FadeUp>

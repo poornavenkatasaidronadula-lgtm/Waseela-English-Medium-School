@@ -45,9 +45,9 @@ export default function Admissions() {
     e.preventDefault();
     setLoading(true);
 
-    const message = `================================
-NEW ADMISSION INQUIRY
-================================
+    const message = `----------------------------------------
+🎓 NEW ADMISSION INQUIRY 🎓
+----------------------------------------
 
 👤 Student Details
 • Name: ${form.studentName}
@@ -66,7 +66,7 @@ ${form.address}
 📝 Additional Message
 ${form.message || 'N/A'}
 
-================================`;
+----------------------------------------`;
 
     const whatsappNumber = '919030499487';
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

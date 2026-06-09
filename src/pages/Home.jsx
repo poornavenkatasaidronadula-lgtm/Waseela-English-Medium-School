@@ -135,32 +135,31 @@ export default function Home() {
           <div className="hero-overlay" />
         </div>
         <div className="container hero-content">
-          <motion.div
-            className="hero-badge"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <Star size={14} /> Nursery to 10th Class · Anantapur, India
-          </motion.div>
-
-          {/* Admissions Open tag */}
-          <motion.div
-            className="hero-admissions-tag"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.35 }}
-          >
-            🎓 Admissions Open for Academic Year 2026–27
-          </motion.div>
+          <div className="hero-tags-wrapper">
+            <motion.div
+              className="hero-badge"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Star size={14} color="var(--secondary)" /> Nursery to 10th Class
+            </motion.div>
+            <motion.div
+              className="hero-admissions-tag"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              🎓 Admissions Open 2026–27
+            </motion.div>
+          </div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <span className="hero-highlight">Nurturing Young Minds</span><br />
-            for a Brighter Tomorrow
+            Nurturing <span className="hero-highlight">Young Minds</span> for a Brighter Tomorrow
           </motion.h1>
 
           <motion.p

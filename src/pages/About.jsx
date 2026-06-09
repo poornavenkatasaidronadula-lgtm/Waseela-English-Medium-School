@@ -62,11 +62,11 @@ export default function About() {
             <FadeUp delay={0.15}>
               <div>
                 <div className="section-tag"><BookOpen size={12} /> Our Story</div>
-                <h2 className="section-title">Building Futures Since 2008</h2>
+                <h2 className="section-title">Building Strong Foundations for Lifelong Success</h2>
                 <div className="gold-divider" />
                 <p style={{ marginBottom: 18 }}>
-                  Waseela English Medium School was born from a simple yet powerful vision: to provide high-quality, affordable English-medium
-                  education to the children of Anantapur. Founded in 2008 in KVS Nagar, Old Town, we began with 80 students and a passionate team of 8 teachers.
+                  Waseela English Medium School is committed to providing quality education that empowers students to excel in academics
+                  while developing confidence, discipline, leadership, and compassion.
                 </p>
                 <p style={{ marginBottom: 18 }}>
                   Today, we proudly serve over 300 students from Nursery to Class X, maintaining our founding commitment to academic excellence,
@@ -109,9 +109,7 @@ export default function About() {
                 <div className="mv-icon"><Target size={28} /></div>
                 <h3>Our Mission</h3>
                 <p>
-                  To provide high-quality, affordable English-medium education that nurtures the intellectual,
-                  emotional, physical, and moral development of every student — preparing them to become
-                  responsible global citizens.
+                  Provide quality education through innovative teaching methods and foster creativity, leadership, and strong values.
                 </p>
                 <ul className="mv-list">
                   <li><CheckCircle size={14} /> Foster academic excellence and curiosity</li>
@@ -125,8 +123,7 @@ export default function About() {
                 <div className="mv-icon"><Star size={28} /></div>
                 <h3>Our Vision</h3>
                 <p>
-                  To be the most trusted and respected educational institution in Andhra Pradesh — recognised
-                  for producing confident, compassionate, and competent graduates who positively impact society.
+                  To create a generation of confident, knowledgeable, and responsible individuals.
                 </p>
                 <ul className="mv-list">
                   <li><CheckCircle size={14} /> World-class education for every child</li>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, AirVent, Wifi } from 'lucide-react';
+import { BookOpen, Dumbbell, Cpu, Shield, FlaskConical, Bus, Wifi, Home, Camera } from 'lucide-react';
 import { FadeUp, StaggerParent, StaggerChild } from '../components/Animations';
 import SEO from '../components/SEO';
 import './Facilities.css';
@@ -13,20 +13,6 @@ const facilities = [
     img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop',
   },
   {
-    icon: <BookOpen size={32} />,
-    title: 'Modern Library',
-    desc: 'A curated collection of books across all subjects and genres, plus digital resources, periodicals, and a quiet reading lounge for focused study.',
-    features: ['Digital Resources & E-Books', 'Quiet Study Lounge', 'Regular Book Additions'],
-    img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop',
-  },
-  {
-    icon: <Dumbbell size={32} />,
-    title: 'Sports Ground',
-    desc: 'A spacious, well-maintained playground that supports cricket, football, kabaddi, basketball, and athletics — promoting physical fitness and teamwork.',
-    features: ['Cricket & Football Fields', 'Kabaddi Ground', 'Indoor Games Room'],
-    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop',
-  },
-  {
     icon: <FlaskConical size={32} />,
     title: 'Science Lab',
     desc: 'A fully equipped science laboratory where students conduct real experiments in Physics, Chemistry, and Biology — bringing textbook concepts to life.',
@@ -34,18 +20,46 @@ const facilities = [
     img: '/science_lab.png',
   },
   {
-    icon: <Shield size={32} />,
-    title: 'Safety & Security',
-    desc: 'A comprehensive campus security system ensuring the highest standards of child safety at all times — giving parents complete peace of mind.',
-    features: ['24/7 CCTV Surveillance', 'Trained Security Personnel', 'Biometric Entry System', 'Emergency Response Plan'],
-    img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop',
-  },
-  {
     icon: <Wifi size={32} />,
     title: 'Computer Lab',
     desc: 'A modern computer laboratory with high-speed internet, age-appropriate software, and structured lessons in digital literacy and coding basics.',
     features: ['High-Speed Broadband', 'Coding & Digital Literacy', 'Safe Internet Filters'],
     img: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop',
+  },
+  {
+    icon: <BookOpen size={32} />,
+    title: 'Library',
+    desc: 'A curated collection of books across all subjects and genres, plus digital resources, periodicals, and a quiet reading lounge for focused study.',
+    features: ['Digital Resources & E-Books', 'Quiet Study Lounge', 'Regular Book Additions'],
+    img: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop',
+  },
+  {
+    icon: <Dumbbell size={32} />,
+    title: 'Sports Activities',
+    desc: 'A spacious, well-maintained playground that supports cricket, football, kabaddi, and indoor games — promoting physical fitness and teamwork.',
+    features: ['Cricket & Football Fields', 'Kabaddi Ground', 'Indoor Games Room', 'Annual Sports Day'],
+    img: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop',
+  },
+  {
+    icon: <Bus size={32} />,
+    title: 'Safe Transportation',
+    desc: 'Reliable school transport with trained drivers covering all key areas of Anantapur, ensuring students travel safely to and from school every day.',
+    features: ['GPS-Tracked Vehicles', 'Trained Drivers', 'Safe Drop & Pick-up', 'Wide Route Coverage'],
+    img: 'https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=600&h=400&fit=crop',
+  },
+  {
+    icon: <Home size={32} />,
+    title: 'Hostel Facility',
+    desc: 'A comfortable and supervised hostel facility providing students with a secure, homely environment with nutritious meals and academic support.',
+    features: ['Separate Boys & Girls Hostels', 'Nutritious Meals', '24/7 Supervision', 'Study Hall Access'],
+    img: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop',
+  },
+  {
+    icon: <Camera size={32} />,
+    title: 'CCTV Security',
+    desc: 'A comprehensive campus security system with 24/7 CCTV surveillance ensuring the highest standards of child safety at all times.',
+    features: ['24/7 CCTV Surveillance', 'Trained Security Personnel', 'Biometric Entry System', 'Emergency Response Plan'],
+    img: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop',
   },
 ];
 

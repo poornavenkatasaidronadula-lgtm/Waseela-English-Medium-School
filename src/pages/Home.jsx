@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   BookOpen, Award, Users, Star, Shield, Cpu, Dumbbell,
-  ChevronRight, Quote, ArrowRight, CheckCircle, GraduationCap, Heart, Zap,
-  IndianRupee, AirVent, Monitor, Lightbulb, TreePine
+  ChevronRight, Quote, ArrowRight, CheckCircle, GraduationCap,
+  Heart, Zap, UserCheck, FlaskConical
 } from 'lucide-react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
@@ -21,11 +21,12 @@ const stats = [
 ];
 
 const whyUs = [
-  { icon: <IndianRupee size={28} />, title: 'Affordable Fee Structure', desc: 'Quality education made accessible with a budget-friendly and transparent fee structure for every family.' },
-  { icon: <AirVent size={28} />, title: 'AC Classrooms', desc: 'Air-conditioned classrooms that provide a comfortable and focused learning environment throughout the year.' },
-  { icon: <Monitor size={28} />, title: 'Digital Panel Board', desc: 'Well-equipped classrooms featuring modern Digital Panel Boards for an interactive and engaging teaching experience.' },
-  { icon: <Lightbulb size={28} />, title: 'Expertise Educators', desc: 'Highly skilled educators with proven teaching skills, dedicated to nurturing every student\'s potential.' },
-  { icon: <TreePine size={28} />, title: 'Spacious Play Ground', desc: 'A large, well-maintained playground where students can play, exercise, and enjoy their physical activities freely.' },
+  { icon: <Award size={28} />, title: 'Academic Excellence', desc: 'We maintain high academic standards through rigorous curriculum, regular assessments, and dedicated faculty support for every student.' },
+  { icon: <UserCheck size={28} />, title: 'Qualified Educators', desc: 'Our team of experienced and passionate teachers bring subject expertise and modern teaching methods to every classroom.' },
+  { icon: <Star size={28} />, title: 'Holistic Development', desc: 'Beyond academics, we nurture creativity, sports, leadership, and moral values to shape well-rounded individuals.' },
+  { icon: <Shield size={28} />, title: 'Safe Campus', desc: 'A fully secured campus with CCTV surveillance, trained staff, and child-safe infrastructure ensuring complete peace of mind.' },
+  { icon: <FlaskConical size={28} />, title: 'Activity-Based Learning', desc: 'Hands-on experiments, projects, and activities make learning engaging, practical, and deeply effective for all age groups.' },
+  { icon: <Users size={28} />, title: 'Parent-School Partnership', desc: 'We maintain open communication with parents through regular meetings, progress reports, and collaborative involvement in student growth.' },
 ];
 
 const classes = [
@@ -123,27 +124,41 @@ export default function Home() {
           >
             <Star size={14} /> Nursery to 10th Class · Anantapur, India
           </motion.div>
+
+          {/* Admissions Open tag */}
+          <motion.div
+            className="hero-admissions-tag"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.35 }}
+          >
+            🎓 Admissions Open for Academic Year 2026–27
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Shaping Young Minds<br />
-            <span className="hero-highlight">for a Better Future</span>
+            <span className="hero-highlight">Nurturing Young Minds</span><br />
+            for a Brighter Tomorrow
           </motion.h1>
+
           <motion.p
             className="hero-sub"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.7 }}
           >
-            Quality Education with Discipline, Knowledge &amp; Values
+            At Waseela English Medium School, we provide a safe, inspiring, and student-centered
+            learning environment that helps children grow academically, socially, and morally.
           </motion.p>
+
           <motion.div
             className="hero-actions"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
+            transition={{ delay: 0.9 }}
           >
             <Link to="/admissions" className="btn btn-primary hero-btn">
               Apply Now <ArrowRight size={16} />

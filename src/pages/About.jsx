@@ -181,7 +181,8 @@ export default function About() {
                 Thank you for your trust and support. We look forward to guiding our students on their journey toward excellence and success.
               </p>
               <div className="principal-signature">
-                Warm Regards,
+                Warm Regards,<br /><br />
+                — The Principal, Waseela English Medium School
               </div>
             </div>
           </FadeUp>

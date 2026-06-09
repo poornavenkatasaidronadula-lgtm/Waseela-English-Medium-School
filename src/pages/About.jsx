@@ -170,6 +170,24 @@ export default function About() {
         </div>
       </section>
 
+      {/* Board Of Directors Message */}
+      <section className="section" style={{ background: 'var(--cream)' }}>
+        <div className="container">
+          <FadeUp>
+            <div className="principal-message">
+              <div className="section-tag"><Star size={12} /> Leadership</div>
+              <h2 className="section-title">Board of Directors' Message</h2>
+              <div className="gold-divider" />
+              <div className="principal-quote">"</div>
+              <p>
+                Our vision is to build a foundation of excellence where modern education meets strong moral values. We are committed to providing world-class facilities and empowering every student to become a confident, responsible, and successful leader of tomorrow.
+              </p>
+              <div className="principal-signature">— Board of Directors, Waseela English Medium School</div>
+            </div>
+          </FadeUp>
+        </div>
+      </section>
+
 
     </div>
   );

@@ -45,7 +45,7 @@ const facilities = [
     title: 'Safe Transportation',
     desc: 'Reliable school transport with trained drivers covering all key areas of Anantapur, ensuring students travel safely to and from school every day.',
     features: ['GPS-Tracked Vehicles', 'Trained Drivers', 'Safe Drop & Pick-up', 'Wide Route Coverage'],
-    img: 'https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=600&h=400&fit=crop',
+    img: '/Bus.jpeg',
   },
   {
     icon: <Home size={32} />,
